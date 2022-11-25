@@ -1,0 +1,106 @@
+/* =======  Page Specific Typography  ====== */
+
+p {
+    font-size: 2vh;
+}
+
+.title {
+    font-size: 5vh;
+}
+
+h2, h3 {
+    font-size: 3.5vh;
+}
+
+/* ===========  Color Variables  ========== */
+
+:root {
+    --hero-title-font: white;
+    --hero-link-font: white;
+    --hero-link-hover:gray;
+    --hero-gradient: #fff2;
+
+    --high-second-bg: #e7d2cc;
+}
+
+/* ===========  Sections  ========== */
+
+.hero {
+
+    /* Add your background img url here */
+    
+    background: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)  ),
+    url(./../assets/dinopic.PNG) 
+    center;
+    /* Image is a screenshot by Sebastian from the original google chrome dino game */
+
+    background-size: cover;
+    padding: 10rem 0;
+    color: black;
+}
+
+.hero > * {
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    background-color: rgba(238, 237, 231, 0.5);
+    
+}
+
+.hero a {
+    padding: 0.5em 1em;
+    border: 2px solid var(--hero-link-font);
+    border-radius: 1em;
+    font-weight: 600;
+    margin-bottom: 0;
+    background-color: #B9B7BD;
+}
+
+.hero a:hover {
+    background: #868B8E;
+}
+
+.high {
+    display: flex;
+}
+
+.high-img, .high-text {
+    flex: 1;
+    margin: 2rem;
+}
+
+
+.high-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.high-text > * {
+    margin-top: 1.5rem;
+}
+
+.first {
+    order: -1;
+    text-align: left;
+}
+
+.second div.high-text {
+    text-align: right;
+}
+.second {
+    background-color: var(--high-second-bg);
+}
+#rules{
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    margin-top: 3em;
+}
+.second>.high-text,.second>.high-text>*{
+    background-color: var(--high-second-bg);
+}

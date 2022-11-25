@@ -1,0 +1,39 @@
+/* =======  Page Specific Typography  ====== */
+
+table {
+    font-family: serif;
+}
+
+
+/* ===========  Color Variables  ========== */
+
+:root {
+    --even-row-bg: #e7d2cc;
+    --header-underline: black;
+}
+
+/* ===========  Sections  ========== */
+
+/* Table */
+
+table {
+    margin: 0 auto;
+    min-width:400px;
+}
+
+th{
+    border-bottom: 2px solid var(--header-underline);
+}
+
+th, td {
+    text-align:center;
+    padding: 0.5rem 1rem;
+}
+
+tr:nth-child(even){
+    background-color: var(--even-row-bg);
+}
+
+tr:hover{
+    font-weight: 700;
+}

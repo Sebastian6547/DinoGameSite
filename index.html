@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Title Landing Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/baseline.css">
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <script src="./scripts/fake_db.js" defer></script>
+    <script src="./scripts/loginState.js" defer></script>
+
+</head>
+
+<body>
+    <nav>
+        <ul class="max-w">
+            <li class="logo"><a href="index.html"><span>Dinosaurs and Cacti</span></a></li>
+            <div class="flex-even">
+                <li id="scores"><a href="scores.html">Scores</a></li>
+                <li id="signup"><a href="signup.html">Sign-up</a></li>
+                <li id="login"><button>Log-in</button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main >
+        <section class="hero center pad">
+            <h1 class="title">Play the most competitive dinosaur game</h2>
+            <p>You can play google's offline dino game with your webcam on this website. This site also lets you keep track of the score of everyone who plays it, making it the most competitve dino game.</p>
+            <a href="signup.html">Sign-up now!</a>
+        </section>
+
+        <section class="highlights max-w">
+            <div class="high center pad">
+                <div class="high-img ">
+                    <img src="./assets/handraised.png" alt="descriptive text">
+                    <!-- This image is from Sebastian's teachable machine poses -->
+                </div>
+                <div class="high-text first">
+                    <h2>Play with your webcam</h3>
+                    <p>To play the game, you need to have a webcam pointed at you. So whenever you raise your hand, the dinosaur jumps, making this the most unique dino game out there.</p>
+                </div>
+            </div>
+            <div class="high center second pad">
+                <div class="high-img">
+                    <img src="./assets/scoretable.PNG" alt="descriptive text">
+                    <!-- This image is from an example showed in class -->
+                </div>
+                <div class="high-text center">
+                    <h2>Scoreboard</h3>
+                    <p>Everytime you play the dino game, the scoreboard updates so your score and username is displayed for others to see. This makes the game very competitive, since you can play to get better scores than your friends.</p>
+                </div>
+            </div>
+        </section>
+        <section id="rules">
+            <h2>Instructions</h2>
+            <p>- You need to have a webcam pointed at you to play the game.</p>
+            <p>- Once the webcam is on, you need to raise your hand to jump in the dinosaur game while avoiding to hit the cacti along the way.</p>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

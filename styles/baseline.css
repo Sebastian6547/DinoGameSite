@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #eeede7;
+}
+
+/* ===========  Color Variables  ========== */
+
+:root {
+    --nav-bg-primary: #e7d2cc;
+    --nav-bg-hover: whitesmoke;
+    --nav-font: black;
+
+    --tester-bg: lightgray;
+}
+
+/* ==========  Typography  =========== */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    font-size: 1.8vh;
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+h1 {
+    font-size: 3.5vh;
+}
+
+/* =========  Utility Classes  ======= */
+
+.center {
+    text-align: center;
+}
+
+.pad {
+    padding: 2rem 1.25rem;
+}
+
+.max-w {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.flex-even {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* ============== Nav ============== */
+nav {
+    background-color: var(--nav-bg-primary);
+    color: var(--nav-font);
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div {
+    justify-content: flex-end;
+}
+.logo {
+    font-weight: 900;
+}
+
+.logo span {
+    font-size: 2.25vh;
+}
+
+nav a {
+    padding: 0.75em;
+}
+
+nav a:hover,
+nav button:hover {
+    background-color: var(--nav-bg-hover);
+}
+
+nav button {
+    background-color: inherit;
+    color: inherit;
+    font-size: 1.8vh;
+    border: none;
+    padding: 0.75em;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+#play {
+    font-weight: 900;
+    display: none;
+}
+
+/* ============== Local Storage Testing ============== */
+
+#tester {
+    background: var(--tester-bg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#test-header {
+    grid-column: 1 / 3;
+}
